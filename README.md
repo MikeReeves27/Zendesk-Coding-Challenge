@@ -11,32 +11,44 @@ The program then becomes an interactive CLI application in which the user can vi
 # How to run
 ### Installing Python
 
-1. Download and install [Python](https://www.python.org/downloads/)
-2. Install the *Requests* library for Python via the Command Line:
+1. Navigate to the system's Command Line and check to see if Python is already installed with the below command. If a Python version number appears, it is already installed on the system.
 
-<pre><code> $ python -m pip install requests </code></pre>
+<pre><code>python --version</code></pre>
+
+2. If no such version number is given, Python will need to be installed. It can be downloaded [here](https://www.python.org/downloads/)
+3. Once Python installation is finished, install the *Requests* library for Python via the Command Line:
+
+<pre><code> python -m pip install requests </code></pre>
 
 *Note that the pip function is included with Python 3.4 and above. Previous versions may require an external download*
 
+### Installing Git
+
+1. To download this code repository, Git will need to be installed on the system. The below command can be used to check if Git is already installed. If a Git version number appears, it is already installed on the system.
+
+<pre><code>git --version</code></pre>
+
+2. If no such version number is given, Git will need to be installed. It can be downloaded [here](https://git-scm.com/downloads)
+
 ### Running the Ticket Viewer
 
-1. Download the code repository via the Command Line:
+1. Once both Python and Git are installed, download the code repository via the Command Line:
 
-<pre><code> $ git clone https://github.com/MikeReeves27/Zendesk-Coding-Challenge </code></pre>
+<pre><code> git clone https://github.com/MikeReeves27/Zendesk-Coding-Challenge </code></pre>
 
 2. To start the main program, navigate to the destination folder on computer and run the following code:
 
-<pre><code> $ zendesk_tickets.py </code></pre>
+<pre><code> zendesk_tickets.py </code></pre>
 
 ### Running the Unit Tests
 
 - To run full tests, run the following code on the Command Line:
 
-<pre><code> $ test_zendesk_tickets.py </code></pre>
+<pre><code> test_zendesk_tickets.py </code></pre>
 
 - To run tests on individual functions, run the following code on the Command Line:
 
-<pre><code> $ python -m unittest test_zendesk_tickets.TestZendeskTickets.<b><i>function_name</i></b> </code></pre>
+<pre><code> python -m unittest test_zendesk_tickets.TestZendeskTickets.<b><i>function_name</i></b> </code></pre>
 
 Replace the <b><i>function_name</i></b> with any of the following unit test functions:
 
